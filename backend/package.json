@@ -1,0 +1,21 @@
+{
+  "name": "backend",
+  "version": "1.0.0",
+  "description": "",
+  "main": "mitienda.js",
+  "scripts": {
+    "start": "node mitienda.js",  
+    "dev": "nodemon mitienda.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.18.2" 
+  },
+  "devDependencies": {
+    "nodemon": "^3.0.1" 
+  }
+}
+
