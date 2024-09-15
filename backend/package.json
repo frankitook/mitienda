@@ -4,18 +4,13 @@
   "description": "",
   "main": "mitienda.js",
   "scripts": {
-    "start": "node mitienda.js",  
-    "dev": "nodemon mitienda.js",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node mitienda.js"
   },
-  "keywords": [],
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "express": "^4.18.2" 
-  },
-  "devDependencies": {
-    "nodemon": "^3.0.1" 
+    "backend": "file:",
+    "express": "^4.18.2",
+    "mysql2": "^3.11.3"
   }
 }
-

@@ -1,16 +1,16 @@
 const express = require('express');
 const app = express();
-const port = process.env.PORT || 3000;
+const port = 3000;
 
-// Middleware para parsear JSON
+
 app.use(express.json());
 
-// Ruta básica de ejemplo
-app.get('/', (req, res) => {
-  res.send('¡Hola, mundo desde Node.js!');
-});
 
-// Iniciar el servidor
+const sociosRoutes = require('./routes/socioRoutes');
+
+app.use('/socios', sociosRoutes);
+
+
 app.listen(port, () => {
   console.log(`Servidor escuchando en http://localhost:${port}`);
 });
