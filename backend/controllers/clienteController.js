@@ -15,4 +15,20 @@ const obtenerClientes= async (req,res) => {
 
 }
 
+
+const obtenerUnCliente= async (req,res) => {
+    
+    try {
+       
+
+        
+    } catch (error) {
+        
+        
+    };
+
+
+}
+
+
 module.exports ={obtenerClientes}
