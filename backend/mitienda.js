@@ -7,7 +7,7 @@ const crypto = require('crypto');
 
 
 const clientesRoutes = require('./routes/clienteRoutes');
-
+const authRoutes = require('./routes/authRoutes');
 
 
 app.use(express.json());
@@ -15,7 +15,7 @@ app.use(express.json());
 
 
 app.use('/clientes', clientesRoutes);
-
+app.use('/autenticacion', authRoutes);
 
 
 if (!process.env.JWT_SECRET) {
