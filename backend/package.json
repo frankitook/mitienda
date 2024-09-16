@@ -10,7 +10,10 @@
   "license": "ISC",
   "dependencies": {
     "backend": "file:",
+    "bcryptjs": "^2.4.3",
     "express": "^4.18.2",
-    "mysql2": "^3.11.3"
+    "jsonwebtoken": "^9.0.2",
+    "mysql2": "^3.11.3",
+    "sequelize": "^6.37.3"
   }
 }
