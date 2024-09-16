@@ -1,5 +1,5 @@
 const jwt = require('jsonwebtoken');
-const Cliente = require('../models/clienteModel');
+const Cliente = require('../models/personaModel');
 
 function generarTokenCliente(cliente) {
   return jwt.sign({ cliente }, process.env.JWT_SECRET, { expiresIn: '7d' });

@@ -3,6 +3,6 @@ const router = express.Router();
 const ClienteController = require('../controllers/clienteController');
 const autenticacion = require('../middleware/autenticacion');
 
-router.get('/', autenticacion.verificarAutenticacionCliente ,ClienteController.obtenerClientes); 
+router.get('/', ClienteController.obtenerClientes); 
 
 module.exports = router;

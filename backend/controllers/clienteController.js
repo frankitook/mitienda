@@ -1,9 +1,11 @@
-const Cliente = require('../models/clienteModel');
+const Cliente = require('../models/personaModel');
 
 const obtenerClientes= async (req,res) => {
     
     try {
-        const clientes = await Cliente.findAll();
+        const clientes = await Cliente.findAll({
+            where: { tipo: 'Cliente' }
+        });
         res.json(clientes);
 
         
