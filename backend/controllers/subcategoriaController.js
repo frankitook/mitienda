@@ -9,7 +9,7 @@ const obtenerSubcategorias= async (req,res) => {
         
     } catch (error) {
         
-        res.status(500).json({ message: 'Error al obtener las categorias' });
+        res.status(500).json({ message: 'Error al obtener las subcategorias' });
     };
 
 
