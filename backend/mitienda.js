@@ -8,14 +8,17 @@ const crypto = require('crypto');
 
 const clientesRoutes = require('./routes/clienteRoutes');
 const authRoutes = require('./routes/authRoutes');
+const categoriaRoutes= require('./routes/categoriaRoutes');
+const subcategoriaRoutes=require('./routes/subcategoriaRoutes');
 
 
 app.use(express.json());
 
 
-
 app.use('/clientes', clientesRoutes);
 app.use('/autenticacion', authRoutes);
+app.use('/categorias',categoriaRoutes);
+app.use('/subcategorias',subcategoriaRoutes);
 
 
 if (!process.env.JWT_SECRET) {
