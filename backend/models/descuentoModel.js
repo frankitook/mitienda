@@ -10,7 +10,7 @@ const Descuento = base.define('Descuento', {
         }
     },
     fechaDesde: { type: DataTypes.DATEONLY, primaryKey: true },
-    fechaHasta: { type: DataTypes.DATEONLY, allowNull: false },
+    fechaHasta: { type: DataTypes.DATEONLY, allowNull: true },
     porcentaje: { type: DataTypes.FLOAT, allowNull: false }
 }, {
     tableName: 'descuentos',
